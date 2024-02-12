@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "f5e3edcc96ca660b4d4b56250a493c61"
+name = "google-form"
+handle = "google-form"
+application_url = "https://verified-equally-integrity-mysimon.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "dev-shohan.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_theme"
+
+[auth]
+redirect_urls = [
+  "https://verified-equally-integrity-mysimon.trycloudflare.com/auth/callback",
+  "https://verified-equally-integrity-mysimon.trycloudflare.com/auth/shopify/callback",
+  "https://verified-equally-integrity-mysimon.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
